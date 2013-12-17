@@ -1,0 +1,375 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../img/topo.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ececec;
+	height: 80px;
+}
+
+h2 {
+	background-image: url(../img/h2_linha.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Tahoma;
+	color: black;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Tahoma;
+	color: black;
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+
+#estrutura {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#topo {
+	height: 80px;
+	overflow: hidden;
+}
+
+#topo #topo_superior {
+	height: 45px;
+}
+
+#topo #topo_superior h1 {
+	float: left;
+	
+	font-family: "Tahoma";
+	font-size: 22px;
+	color: #fff;
+	line-height: 45px;
+	font-weight: normal;
+}
+
+#topo #topo_superior h1 a {
+	float: left;
+	color: inherit;
+	text-decoration: none;
+	
+}
+
+#topo #topo_superior #menu_superior {
+	float: right;
+	color: #7a7a7a;
+	font-family: "Arial";
+	font-size: 12px;
+	line-height: 45px;
+}
+
+#topo #topo_superior #menu_superior a {
+	color: white;
+}
+
+#topo #menu li {
+	display: inline;
+	line-height: 35px;
+	margin-right: 16px;
+	font-family: "Trebuchet MS", "Arial", sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#topo #menu li a {
+	color: white;
+	text-decoration: none;
+}
+
+#topo #menu li a:hover {
+	text-decoration: underline;
+}
+
+
+/*Conteudo*/
+#conteudo {
+	margin-top: 30px;
+}
+
+#conteudo #conteudo_interno.com_sidebar {
+	width: 642px; /*672px - 30px*/
+	float: left;
+	padding: 11px 15px;
+}
+
+
+/* Sidebar */
+#sidebar {
+	float: left;
+	margin-top: 65px;
+	margin-left: 40px;
+}
+
+
+/* Mensagem Flash */
+#flashMessage {
+	border: 1px solid gray;
+	background-color: white;
+	padding: 6px;
+	margin-bottom: 10px;
+}
+
+
+
+/* Classes gerais */
+.clear {
+	clear: both;
+}
+
+
+
+/* Botoes */
+.sidebar_botao {
+	display: block;
+	padding-top: 39px;
+	overflow: hidden;
+	width: 220px;
+	height: 0;
+}
+
+.sidebar_botao.adicionarfuncionario {
+	background-image: url(../img/sidebar_botao_adicionarfuncionario.png);
+}
+
+.sidebar_botao.adicionarevento {
+	background-image: url(../img/sidebar_botao_adicionarevento.png);
+}
+
+
+
+/* Formulario */
+form div.input {
+	margin-bottom: 16px;
+	background-image: url(../img/input_bg.png);
+	height: 31px;
+	width: 401px;
+}
+
+form div label {
+	display: block;
+	padding: 0 0 0 10px;
+	line-height: 31px;
+	height: 31px;
+	float: left;
+	width: 120px;
+	color: white;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+form div.input.text input,form div.input.password input {
+	border: 0;
+	margin-top: 1px;
+	line-height: 21px;
+	height: 25px;
+	width: 263px;
+	padding-left: 4px;
+	padding-top: 4px;
+	font-size: 14px;
+}
+
+
+
+/*Classes especiais*/
+ul.baterponto li {
+	display: inline-table;
+	width: 235px;
+	text-align: center;
+	background-image: url(../img/li_baterponto_divisoria.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+	height: 205px;
+}
+
+ul.baterponto li.primeiro {
+	background-image: none;
+}
+
+ul.baterponto li h3 {
+	font-family: "Trebuchet MS","Arial",sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-top: 34px;
+	color: #d2d2d2;
+}
+
+ul.baterponto li.batido h3 {
+	color: #448e0d;
+}
+
+ul.baterponto li.ativo h3 {
+	color: #316992;
+}
+
+
+
+ul.baterponto li p.hora {
+	font-family: Verdana,sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #d8d7d7;
+}
+
+ul.baterponto li.batido p.hora {
+	color: #448e0d;
+}
+
+ul.baterponto li.ativo p.hora {
+	color: #a4dcff;
+}
+
+ul.baterponto li a.botao {
+	display: block;
+	width: 152px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 28px;
+	background-image: url(../img/botao_baterponto_inativo.png);
+	background-repeat: no-repeat;
+	margin-left: 42px;
+	margin-top: 20px;
+	cursor: default !important;
+}
+
+ul.baterponto li.batido a.botao {
+	background-image: url(../img/botao_baterponto_batido.png);
+}
+
+ul.baterponto li.ativo a.botao {
+	background-image: url(../img/botao_baterponto.png);
+	cursor: pointer !important;
+}
+
+ul.baterponto li.naobatido a.botao {
+	background-image: url(../img/botao_baterponto_naobatido.png);
+}
+
+
+
+
+ul.funcionarios li {
+	border-bottom: 1px solid #d9ddde;
+	height: 55px;
+	line-height: 55px;
+	list-style: none;
+	padding: 0 16px;
+	font-family: Tahoma;
+	font-size: 18px;
+	color: #3e3f3e;
+	clear: both;
+}
+
+ul.funcionarios li small {
+	font-size: 14px;
+	color: #838383;
+}
+
+ul.funcionarios li div.conteudo {
+	float: left;
+}
+
+ul.funcionarios li div.links {
+	float: right;
+	font-size: 14px;
+}
+
+ul.funcionarios li div.links a {
+	color: #838383;
+	margin-left: 4px;
+}
+
+ul.funcionarios li div.links a.excluir {
+	color: #883434;
+}
+
+ul.funcionarios li.cor {
+	background-color: white;
+}
+
+
+table.pontos {
+	border-collapse: collapse;
+	font-family: Tahoma;
+	font-size: 14px;
+	width: 100%;
+}
+
+table.pontos tr {
+	margin: 0;	
+}
+
+table.pontos tr td {
+	border: 1px solid #d8d8d8;
+	padding: 6px;
+	background-color: white;
+}
+
+table.pontos tr td.data {
+	border: 0;
+	background: none;
+	text-align: right;
+	background-color: white;
+	border: 1px solid #d8d8d8;
+	font-weight: bold;
+}
+
+table.pontos tr td.negativo {
+	color: #990000;
+}
+
+table.pontos thead tr th {
+	height: 39px;
+	padding: 0 6px;
+	font-size: 13px;
+	background-image: url(../img/table_ponto_th_repeticao.png);
+	border-left: 1px solid #d8d8d8;
+}
+
+table.pontos thead tr th.naotem {
+	background: none;
+	border-left: none;
+}
+
+table.pontos thead tr th.esquerda {
+	background-image: url(../img/table_ponto_th_esquerda.png);
+	border-left: none;
+}
+
+table.pontos thead tr th.direita {
+	background-image: url(../img/table_ponto_th_direita.png);
+	background-position: top right;
+}
+
+table.pontos tr.fds td {
+	color: #666;
+	background-color: #e0e8eb;
+}
+
+table.pontos tr.falta td {
+	color: #ae9700;
+	background-color: #fdffc0;
+}
+
+table.pontos tr.falta_s_justificativa td {
+	color: #990000;
+	background-color: #ffc0c0;
+}
+
+
+

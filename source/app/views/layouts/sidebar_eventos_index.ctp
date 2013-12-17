@@ -1,0 +1,1 @@
+<p><?php echo $html->link("Adicionar evento",array("action"=>"add"),array("class"=>"sidebar_botao adicionarevento")); ?></p>
